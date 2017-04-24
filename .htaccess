@@ -1,5 +1,4 @@
 RewriteEngine on
 RewriteCond %{REQUEST_URI} !(.*)/phpMyAdmin(.*)
-RewriteCond %{REQUEST_URI} !(.*)/jqj9T1v5497oc29bq47lYK586Mqj0P8C(.*)
 RewriteCond %{REQUEST_URI} !(.*)/assets/(.*)
 RewriteRule ^(.*)$ index.php [L] 
