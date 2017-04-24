@@ -1,0 +1,539 @@
+
+
+
+
+
+
+
+h1.immt
+{
+	font-family : "AbsgFont", sans-serif;
+	color:  #987;
+	text-shadow: 0 1px rgba(255, 255, 255, 1);
+
+	padding: 0;
+	text-align: center;
+	margin: 30px 0;
+
+	line-height: 60px;
+}
+
+ul.immts 
+{
+	margin: 0;
+	padding: 0;
+}
+
+ul.immts li
+{
+	list-style:none;
+	background: none;
+	position: relative;
+	margin: 0;
+	padding-top: 5px;
+	padding-left: 5px;
+	display: table;
+	border: 0;
+	border-bottom: 1px solid #bbb;
+	box-shadow: 0 1px 1px 0 #fff;
+	display: block;
+	height: 220px;
+
+	clear:both;
+}
+ul.immts li.row0
+{
+	background: rgba(200, 200, 200, 0.1);
+}
+ul.immts li.row1
+{
+	background: rgba(255, 255, 255, 0.3);
+}
+
+ul.immts li div.immt
+{
+	float: left;
+	width: 185px;
+	margin:0 5px; 
+	height: 220px;
+	position: relative;
+}
+
+
+
+p.image
+{
+	display: table-cell;
+	height: 160px;
+	width: 185px;
+	margin: auto;
+	vertical-align: middle;
+	text-align: center
+}
+p.image img
+{
+	border: 1px solid #000;
+	background: #fff;
+	padding: 1px;
+}
+p.title
+{
+	margin: 0;
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	color:#333;
+	text-shadow: 0 1px rgba(255, 255, 255, 1);
+}
+span.date
+{
+	font-size: 10px;
+	color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Pagination et Filtres                                                                   *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#immtControlsSlot
+{
+	position: relative;
+	margin: 0 -20px;
+	height: 40px;
+}
+#immtControlsBar
+{
+	height: 40px;
+	width: 978px;
+	padding: 0 30px;
+	margin:0 2px;
+	position: relative;
+	font-size: 12px;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #aaa;
+	background-image: url("../../../../assets/theme/default/img/bg-filter.png");
+
+}
+#immtControlsBar.fixed
+{
+	width: 982px;
+	margin:0;
+
+	color:  #987;
+	background-color: rgb(210, 215, 200);
+	background-image: url("../../../../assets/theme/default/img/bg-content.png");
+	background-position: -9px 0;
+	background-repeat : repeat-y;
+
+	position: fixed;
+	top: 39px;
+	z-index: 10;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+	border-bottom: 1px solid #fff;
+
+
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #aaa;
+	
+}
+.filterArea
+{
+	display: block;
+	width: 400px;
+	float: left;
+	margin: 0;
+	line-height: 40px;
+	color: #555;
+}
+.paginationArea
+{
+	text-align: right;
+	display: block;
+	width: 200px;
+	float: right;
+	line-height: 40px;
+	color: #555;
+}
+.paginationArea a
+{
+	display: inline;
+	width: auto;
+}
+
+
+input[type="number"]
+{
+	margin: 0;
+	margin-bottom: 20px;
+	height: 25px;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	text-align: center;
+	width: 30px;
+	color: #000;
+	font-size: 15px;
+	font-family: sans-serif;
+	font-weight: 500;
+	
+	-moz-appearance:textfield;
+	-webkit-appearance: none; 
+}
+input[type="number"]:hover
+{
+	cursor: pointer;
+	color: rgb(16, 82, 137);
+}
+input[type="number"]:focus
+{
+	background : rgba(255,255,255, 0.6);
+}
+input[type="number"]::-webkit-inner-spin-button
+{
+    display: none;
+    margin: 0;
+}
+a.prev, a.next
+{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	text-decoration: none;
+	vertical-align: middle;
+	
+	background: transparent url('../../../../assets/theme/default/img/prev.png') 0 0;
+}
+a.next
+{
+	background-image: url('../../../../assets/theme/default/img/next.png');
+	margin-left: 5px;
+}
+a.prev:hover, a.next:hover
+{
+	background-position-y: 25px;
+}
+a.disable
+{
+	background-position-y: 0;
+}
+a.disable:hover
+{
+	background-position-y: 0;
+}
+
+a.newImmt
+{
+	display: inline-block;
+	background-image: url('../../../../assets/theme/default/img/add-immt.png');
+	background-repeat: no-repeat;
+	padding-left: 30px; 
+	line-height: 25px;
+	height: 25px;
+
+	font-weight: bold;
+	font-size: 16px;
+	font-family : "AbsgFont", sans-serif;
+	color:  #765;
+	text-shadow: 0 1px rgba(255, 255, 255, 1);
+	text-decoration: none;
+}
+a.newImmt:hover
+{
+	background-position: 0 -25px;
+	color:  #000;
+}
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Statistiques                                                                            *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+div.stats
+{
+	padding-top: 10px;
+	width: 1000px;
+	margin:auto;
+
+
+	color:  #000;
+	text-shadow: 0 1px #999;
+}
+
+div.stats div.col1
+{
+	height: 130px;
+	margin-top: 15px; 
+	float: left;
+	width: 240px;
+}
+div.stats div.col2
+{
+	height: 130px;
+	margin-top: 15px; 
+	padding-left: 30px;
+	float: left;
+	width: 350px;
+	border-left: 1px solid #888;
+}
+div.stats a.col3
+{
+	display: block;
+	height: 130px;
+	margin-top: 15px; 
+	padding-left: 30px;
+	float: left;
+	width: 340px;
+	border-left: 1px solid #888;
+}
+
+
+
+.stats h3
+{
+	font-family : "AbsgFont", sans-serif;
+	color:  #333;
+	text-shadow: 0 1px #aaa;
+	margin: 0 15px 0 0;
+	padding: 0;
+	text-align: left;
+}
+
+
+.stats p 
+{
+	font-size: 11px;
+	line-height: 20px;
+	text-align: left;
+}
+.stats p span 
+{
+	display: block;
+	float: left;
+	margin: 0;
+	color:  #000;
+	text-shadow: 0 1px #999;
+}
+
+.col1 .label { width: 180px;}
+.col2 .label { width: 150px;}
+
+#graphic
+{
+	float: left;
+	width: 130px;
+	height: 130px;
+	border: 1px red;
+	margin: -1px 0px -10px -15px; 
+}
+div.graphic
+{
+	border: 1px blue;
+}
+div.legend
+{
+
+}
+div.legendBox
+{
+	float: left;
+	width: 15px;
+	height: 10px;
+	border: 1px solid #000;
+	margin: 4px 10px -2px 10px;
+}
+
+.jqplot-data-label
+{
+	color: #ddd;
+	text-shadow: 0 1px #000;
+}
+
+/*Colonne 3 */
+.stats img
+{
+	float: right;
+	margin-top: 10px;
+}
+div.stats .col3 .label { width: 50px;}
+
+div.stats .col3 p
+{
+	position: relative;
+	display: block;
+	width: 190px;
+	height: 40px;
+}
+#progressChart, 
+{
+	position: relative;
+	display: block;
+	width: 190px;
+	height: 25px;
+	margin-top: 10px;
+}
+#progressChart p
+{
+	margin: 0;
+
+}
+
+#progressBar
+{
+	position: relative;
+	float: left;
+	margin: 5px 10px;
+	width:100px;
+	background: #eee;
+	border: 1px solid #000;
+	border-radius: 5px;
+	height: 10px;
+	padding: 1px;
+}
+#progression
+{
+	background: #876;
+	border-radius: 3px;
+	height: 10px;
+}
+#progressionValue
+{
+	position: absolute;
+	display: block;
+	width: 50px;
+	text-align: center;
+	top:0;
+	left: 25px;
+	color: #000;
+	font-size: 10px;
+}
+
+#boundMin, #boundMax
+{
+	display: block;
+	float: left;
+	color:  #000;
+	text-shadow: 0 1px #999;
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+
+
+a.col3
+{
+	text-decoration: none;
+}
+a.col3:hover
+{
+	background: rgba(0,0,0,0.1);
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Formulaire nouvelle immt                                                                *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#newImmt
+{
+	position: relative;
+	margin: -17px -17px 20px -17px;
+	border: 1px dotted #999;
+	border-width: 1px 0;
+	padding: 10px;
+	background: rgba(0,0,0, 0.1);
+	padding-left: 220px;
+}
+#newImmt label
+{
+	display: block;
+	margin-top: 10px;
+	font-size: 15;
+	font-weight: bold;
+	color: argb(0,0,0, 0.7);
+}
+#newImmt .illustration
+{
+	background-image: url("../../../../assets/theme/default/img/immt-new.png");
+	width: 190px;
+	height: 120px;
+	position: absolute;
+	top: 10px;
+	left:10px;
+}
+#newImmt:hover .illustration
+{
+	background-position: 0 -120px;
+}
+.hidden
+{
+	display: none;
+}
+
+input[type="file"]
+{
+	width: 500px;
+}
+input[type="text"]
+{
+	display: block;
+	height: 25px;
+	background: rgba(255,255,255, 0.6);
+	border: 1px solid #aaa;
+	box-shadow: none;
+	
+	width: 500px;
+	color: rgba(0, 0, 0, 0.7);
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+	font-size: 15px;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+
+input[type="submit"]
+{
+	display: block;
+	float: right;
+	margin: 0px 15px;
+	padding: 60px 10px 10px 10px ; 
+	width: 100px;
+	height: 100px;
+	background-image: url("../../../../assets/theme/default/img/save-icon.png");
+	background-position:  50% 40%;
+	background-repeat: no-repeat;
+}
+input[type="submit"]:hover
+{
+	cursor: pointer;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+ *
+ * js 2.x ne supporte pas IE 6/7/8.
+ *
+
+ * jquery-2.0.3.min.js
+   http://code.jquery.com/jquery-2.0.3.min.js
+
+ * Lightbox 2 (pour jquery 2.x)
+   http://lokeshdhakar.com/projects/lightbox2/
+
+

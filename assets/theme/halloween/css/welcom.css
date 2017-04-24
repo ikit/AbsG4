@@ -1,0 +1,388 @@
+
+
+
+h2
+{
+	font-family : "AbsgFont", sans-serif;
+	color:  #457;
+	text-shadow: 0 1px rgba(255, 255, 255, 1);
+
+	padding: 0;
+	font-size: 30px;
+	margin: 30px 0;
+
+	line-height: 40px;
+}
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Colonne 1 : Resume                                                                      *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.col1
+{
+	display: block;
+	width: 500px;
+	float: left;
+	margin: 0;
+}
+
+#zaffanerie
+{
+	height: 120px;
+	min-height: 120px;
+	width: auto;
+	float: right;
+	margin-top: -10px;
+}
+h1
+{
+	color: rgba(0, 0, 0, 0.5);
+	text-shadow: 0 1px #fff;
+	font-size: 25px;
+	font-weight: 100;
+	margin-top: 70px;
+
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+a.activity
+{
+	position: relative;
+	display:inline-block;
+  	vertical-align:middle;
+	text-decoration: none;
+	color:  #555;
+	width: 478px;
+	border-bottom: 1px solid #eee;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 1px 1px 12px transparent;
+	padding: 5px;
+}
+a.activity:hover
+{
+	
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+}
+.first
+{
+	border-radius: 5px 5px 0 0;
+}
+.last
+{
+	border-radius: 0 0 5px 5px;
+}
+
+.activity img
+{
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	float: left;
+	margin-right: 5px;
+}
+
+.activity .date
+{
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+	width:85px;
+	height: 25px;
+	line-height: 25px;
+	border-left: 1px solid #eee;
+	font-style: italic;
+	color:  #555;
+	text-shadow: 0 1px rgba(255, 255, 255, 1);
+	font-size: 12px;
+	padding-left: 5px;
+}
+.activity .message
+{
+	display: inline-block;
+	float: left;
+	width:315px;
+	height: 25px;
+	padding-left: 5px;
+	line-height: 25px;
+	border-left: 1px solid #eee;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#seeLogs
+{
+	display: block;
+	font-size: 12px;
+	color: #556;
+	text-decoration: none;
+	padding-top: 5px;
+	line-height: 20px;
+	padding-left: 2px,
+}
+#seeLogs:hover
+{
+	color: #225ba2;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Colonne 2 : Immt                                                                        *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.col2
+{
+	width: 500px;
+	height: 500px;
+	float: right;
+	margin: 0;
+  	display: table;
+	text-align: center;
+}
+
+.col2 a
+{
+	display: table-cell;
+	text-decoration: none;
+  	vertical-align: top;
+  	padding-top:  115px;
+}
+.col2 img
+{
+	border: 1px solid #000;
+	background: #fff;
+	padding: 1px;
+	border-radius: 5px;
+}
+.col2 p
+{
+	color: #555;
+	text-shadow: 0 1px #eee;
+
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Frise chrono des passages sur le site                                                   *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+p.passag
+{
+	margin-left: 2px;
+	margin-bottom: 2px;
+	margin-top: 30px;
+	color: #555;
+	text-shadow: 0 1px #eee; 
+	font-size: 12px;
+}
+
+div.passag
+{
+	background: rgba(255,255,255, 0.5);
+	position: relative;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 5px;
+	padding: 2px 1px;
+}
+div.passag table
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+div.passag table th
+{
+	border-bottom: 1px solid #999;
+}
+div.passag table td
+{
+	margin: 0; 
+	width:39px; 
+	padding: 0;
+	text-align:center;
+	border-top: 1px solid #fff;
+}
+
+.f
+{
+	border-left: 2px solid #fff;
+}
+.day.previous 
+{
+	background: rgba(145,205,255, 0.3);
+	color: #333;
+}
+.night.previous 
+{ 
+	background: rgba(0,0,0, 0.6); 
+	color: #ddd; 
+}
+.day.current 
+{
+	background: rgba(255,255,255, 0.1);
+	border-left: 1px solid  rgba(0,0,0, 0.5);
+	border-right: 1px solid  rgba(0,0,0, 0.5);
+	margin: 1px 0; 
+}
+.night.current 
+{ 
+	background: rgba(0,0,0, 0.7); 
+	border-left: 1px solid  rgba(0,0,0, 0.5);
+	border-right: 1px solid  rgba(0,0,0, 0.5);
+	margin: 1px 0; 
+}
+.day.next { color: #aaa;}
+.night.next { background: rgba(0,0,0, 0.5); color: #bbb; }
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Statistiques                                                                            *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+div.stats
+{
+	padding-top: 10px;
+	width: 1000px;
+	margin:auto;
+}
+
+div.stats div.col1
+{
+	height: 130px;
+	margin-top: 15px; 
+	float: left;
+	width: 240px;
+}
+div.stats div.col2
+{
+	height: 130px;
+	margin-top: 15px; 
+	padding-left: 30px;
+	float: left;
+	width: 350px;
+	border-left: 1px solid #888;
+}
+div.stats a.col3
+{
+	display: block;
+	height: 130px;
+	margin-top: 15px; 
+	padding-left: 30px;
+	float: left;
+	width: 340px;
+	border-left: 1px solid #888;
+}
+
+
+.stats h3
+{
+	font-family : "AbsgFont", sans-serif;
+	color:  #333;
+	text-shadow: 0 1px #aaa;
+	margin: 0 15px 0 0;
+	padding: 0;
+	text-align: left;
+}
+
+
+.stats p 
+{
+	font-size: 11px;
+	line-height: 20px;
+	text-align: left;
+}
+.stats p span 
+{
+	display: block;
+	float: left;
+	margin: 0;
+	color:  #000;
+	text-shadow: 0 1px #999;
+}
+
+div.stats .label { width: 180px;}
+
+
+
+/*Colonne 3 */
+.stats img
+{
+	float: right;
+	margin-top: 10px;
+}
+div.stats .col3 .label { width: 50px;}
+
+div.stats .col3 p
+{
+	position: relative;
+	display: block;
+	width: 190px;
+	height: 40px;
+}
+#progressChart, 
+{
+	position: relative;
+	display: block;
+	width: 190px;
+	height: 25px;
+	margin-top: 10px;
+}
+
+#progressBar
+{
+	position: relative;
+	float: left;
+	margin: 5px 10px;
+	width:100px;
+	background: #eee;
+	border: 1px solid #000;
+	border-radius: 5px;
+	height: 10px;
+	padding: 1px;
+}
+#progression
+{
+	background: #679ddf;
+	border-radius: 3px;
+	height: 10px;
+}
+#progressionValue
+{
+	position: absolute;
+	display: block;
+	width: 50px;
+	text-align: center;
+	top:0;
+	left: 25px;
+	color: #000;
+	font-size: 10px;
+}
+
+#boundMin, #boundMax
+{
+	display: block;
+	float: left;
+	color:  #000;
+	text-shadow: 0 1px #999;
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+
+
+a.col3
+{
+	text-decoration: none;
+}
+a.col3:hover
+{
+	background: rgba(0,0,0,0.1);
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}

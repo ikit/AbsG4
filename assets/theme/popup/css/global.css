@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "AbsgFont";
+    src: url('../../../../assets/theme/default/font/Bariol_Regular.otf');
+}
+
+::selection{ background-color: #E13300; color: white; }
+::moz-selection{ background-color: #E13300; color: white; }
+::webkit-selection{ background-color: #E13300; color: white; }
+
+body 
+{
+	margin: 0;
+	font-family: sans-serif;
+	color: #000;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Le container principal (contient header, content et footer)                             *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#container
+{
+	position: absolute;
+	margin: 0;
+	border: none;
+	min-height: 100%;
+	width: 100%;
+	background: #abc9db;
+}
+#container.mm-citation { background-color: #e9e7e1; }
+#container.mm-immt { background-color: #e5e9dd; }
+#container.mm-agpa { background-color: #000; }
+#container.mm-web3g { background-color: #e9e7e1; }
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Le content (contenu du site)                                                            *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#content
+{
+	padding: 10px;
+}
+
+
+
+
+br.clear
+{
+	clear: both;
+	height: 1px;
+	line-height: 1px;
+	margin: 0;
+}
+

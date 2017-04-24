@@ -1,0 +1,193 @@
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Title                                                                                   *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.category h2
+{
+	height: 100px;
+	padding-left: 120px;
+	line-height: 100px;
+	margin: 50px 0 0 0;
+	text-shadow: 0 -1px #000;
+	text-shadow: 0 1px #fff;
+	font-size: 30px;
+	font-family: "AbsgFont", sans-serif;
+	background-repeat: no-repeat;
+}
+
+div.category
+{
+	display: block;
+	width: 460px;
+}
+.left { float:left; }
+.right { float: right;}
+
+
+div.category p
+{
+	height: 50px;
+	font-size: 12px;
+	font-style: italic;
+	padding-left: 15px;
+	opacity: 0.5;
+}
+
+
+
+
+
+a.deletePhoto 
+{
+	background: transparent url('../../../../assets/theme/agpa/img/icon-delete.png') 0 2px no-repeat;
+	color: #900;
+	cursor: pointer;
+	font-size: 12px;
+	float: right;
+}
+a.editPhotoTitle 
+{
+	background: transparent url('../../../../assets/theme/agpa/img/icon-edit.png') 0 2px no-repeat;
+	color: #335;
+	cursor: pointer;
+	float: left;
+}
+
+
+
+/*
+
+.oeuvre .pannel .info {
+	padding: 0 10px;
+}
+.oeuvre .pannel .info span{
+	display: block;
+	float: left;
+	color: #000;
+}
+.oeuvre .pannel .info span.label {
+	width: 60px;
+	color: #414141;
+}
+
+.oeuvre .pannel.cancel .info span{
+	color: blue!important ;
+}
+.oeuvre .pannel.cancel .info span.label {
+	color: #d9d9d9!important ;
+}
+*/
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Photo slot                                                                              *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.oeuvre a.emptySlot
+{
+	display: block;
+	width: 200px;
+	line-height: 200px;
+	background: transparent url('../../../../assets/theme/agpa/img/photoSlot.png') 0 0 no-repeat;
+}
+.oeuvre a.emptySlot:hover{
+	background-position: 0 -200px ;
+}
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Dialog - Message                                                                        *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* popup message  */
+#MessageDialog {
+	background: transparent;
+	float: left;
+	height: 150px;
+	width: 200px;
+	font-size: 12px;
+}
+#MessageDialog p {
+	overflow: auto;
+	color: #d0d0d0 !important;
+	text-align: center;
+	padding: 30px 10px;
+}
+#MessageDialog.wait { background: transparent url('../../../../assets/theme/agpa/img/dialog-wait.gif') 50% 80% no-repeat; }
+#MessageDialog.good { background: transparent url('../../../../assets/theme/agpa/img/dialog-good.png') 50% 70% no-repeat; }
+#MessageDialog.good p { color: #44D564 !important; }
+#MessageDialog.bad  {background: transparent url('../../../../assets/theme/agpa/img/dialog-bad.png') 50% 70% no-repeat;}
+#MessageDialog.bad p { color: #FF5F5F !important; }
+#MessageDialog.question { background: transparent url('../../../../assets/theme/agpa/img/dialog-question.png') 50% 70% no-repeat; }
+#MessageDialog.question p { color: #59C0FF !important; }
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Dialog - New photo                                                                      *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#NewImage 
+{
+	padding: 10px;
+	font-size: 13px;
+}
+#NewImage label { color: #fff; }
+#NewImage span 
+{ 
+	color: #ccc !important;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Dialog - Delete photo                                                                   *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#DeleteImage, #EditTitle  
+{
+	padding: 35px 10px 10px 10px;
+	font-size: 14px;
+	color: #ccc !important;
+	line-height: 15px;
+	text-align: center;
+}
+#DeleteImage img, #EditTitle img 
+{
+	border: 1px solid #000;
+	padding: 1px;
+	background: #fff;
+}
+#DeleteImage p br, #EditTitle p br 
+{
+	margin: 20px;
+}
+#EditTitle p input[type="text"] 
+{
+	text-align: center;
+}
+
+
+input[type="submit"] 
+{
+	display: block;
+	margin:auto;
+}
+
+
+
+

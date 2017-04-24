@@ -1,0 +1,136 @@
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/*  Style des catégories (resume)                                                          *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+a.category
+{
+	display: block;
+	margin: 50px 0 0 0;
+	width: 1000px;
+	height: 100px;
+	border-radius: 5px;
+}
+
+
+.category h2
+{
+	height: 100px;
+	padding-left: 120px;
+	line-height: 100px;
+	margin: 0 0 0 20px;
+	text-shadow: 0 -1px #000;
+	text-shadow: 0 1px #fff;
+	font-size: 30px;
+	font-family: "AbsgFont", sans-serif;
+	background-repeat: no-repeat;
+	width: 400px;
+
+	float: left;
+}
+.category p
+{
+	padding-top: 10px;
+}
+
+.category p.details
+{
+	display: block;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 0 0 0 20px; 
+	padding: 0;
+}
+
+.category p.details span
+{
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 33px;
+	vertical-align: middle;
+	padding-left: 40px;
+	padding-top: 10px;
+	color: #aaa;
+}
+a.category p.details span img
+{
+	display: inline-block;
+	line-height: 33px;
+	vertical-align: middle;
+	margin: 0 0 4px 10px;
+}
+
+#title_details
+{
+	height: 100px;
+	line-height: 100px;
+	background: transparent url('../../../../assets/theme/agpa/img/icon-w-plume.png') 7px 40px no-repeat;
+}
+#title_details img
+{
+	line-height: 100px;
+}
+
+
+span.photos { background: transparent url('../../../../assets/theme/agpa/img/icon-w-photo.png') 5px 15px no-repeat; }
+span.authors { background: transparent url('../../../../assets/theme/agpa/img/icon-w-user.png') 5px 15px no-repeat; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/*  Le mini slideshow par catégorie                                                        *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.minislideshow 
+{
+	width: 200px;
+	height: 100px;
+	overflow: hidden;
+	float: left;
+	margin-left: 75px; 
+}
+.minislideshow img
+{
+	display: block;
+	margin: 3px auto;
+	height: 90px;
+	line-height: 90px;
+	background: #fff;
+	border: 1px solid #000;
+	padding: 1px;
+}
+
+
+a.category:hover
+{
+	box-shadow: 0 0 10px #aaa;
+	background: rgba(255,255,255,0.1);
+}
+
+a.reportPhoto 
+{
+	background: transparent url('../../../../assets/theme/agpa/img/icon-question.png') 0 2px no-repeat;
+	color: #335;
+	cursor: pointer;
+	font-size: 12px;
+	float: left;
+}
+

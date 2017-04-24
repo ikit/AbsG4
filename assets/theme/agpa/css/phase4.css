@@ -1,0 +1,313 @@
+
+
+
+
+
+a.computesScores
+{
+	display: block;
+	margin: 50px 0;
+	width: 960px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.4);
+	background-image: url("../../../../assets/theme/agpa/img/bg-filter.png");
+
+	text-shadow: 0 -1px #000;
+	text-shadow: 0 1px #ccc;
+	font-size: 30px;
+	font-family: "AbsgFont", sans-serif;
+
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+a.computesScores:hover
+{
+	box-shadow: 0 0 3px rgba(255,255,255,1);
+	background: rgba(255,255,255,0.6);
+	color: #a33;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/*  Style des catégories (resume)                                                          *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+a.category
+{
+	display: block;
+	margin: 50px 0 0 0;
+	width: 1000px;
+	height: 100px;
+	border-radius: 5px;
+}
+
+.category h2
+{
+	height: 100px;
+	padding-left: 120px;
+	line-height: 100px;
+	margin: 0 0 0 20px;
+	text-shadow: 0 -1px #000;
+	text-shadow: 0 1px #fff;
+	font-size: 30px;
+	font-family: "AbsgFont", sans-serif;
+	background-repeat: no-repeat;
+	width: 400px;
+
+	float: left;
+}
+.category p.details
+{
+	display: block;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 0 0 0 20px; 
+	padding: 0;
+}
+.category p.details span
+{
+	display: block;
+	width: 100px;
+	height: 33px;
+	line-height: 33px;
+	vertical-align: middle;
+	padding-left: 40px;
+	color: #aaa;
+}
+a.category p.details span img
+{
+	display: inline-block;
+	line-height: 33px;
+	vertical-align: middle;
+	margin: 0 0 4px 10px;
+}
+
+#title_details
+{
+	height: 100px;
+	line-height: 100px;
+	background: transparent url('../../../../assets/theme/agpa/img/icon-w-plume.png') 7px 40px no-repeat;
+}
+#title_details img
+{
+	line-height: 100px;
+}
+
+
+span.photos { background: transparent url('../../../../assets/theme/agpa/img/icon-w-photo.png') 5px 5px no-repeat; }
+span.authors { background: transparent url('../../../../assets/theme/agpa/img/icon-w-user.png') 5px 5px no-repeat; }
+span.stars { background: transparent url('../../../../assets/theme/agpa/img/icon-w-star.png') 5px 3px no-repeat; }
+span.feather { background: transparent url('../../../../assets/theme/agpa/img/icon-w-plume.png') 7px 5px no-repeat; }
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/*  Surcharge du style des catégorie pour l'affichage indépendant du scroll (vote)         *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#voteResumeSlot
+{
+	position: relative;
+	margin: 50px -30px 0 -30px;
+	height: 100px;
+}
+#voteResumePanel
+{
+	height: 100px;
+	width: 1062px;
+	padding: 0 30px;
+	background: transparent;
+	position: relative;
+}
+#voteResumePanel.fixed
+{
+	background-image: url("../../../../assets/theme/agpa/img/bg-content.png");
+	background-repeat : repeat-y;
+
+	position: fixed;
+	top: 40px;
+	z-index: 10;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+	border-bottom: 1px solid #000;
+}
+#voteResumePanel h2
+{
+	width: 350px!important;
+	margin-left: 10px!important;
+}
+#voteResumePanel p.details
+{
+	width: 500px!important;
+	text-align: left;
+}
+#voteResumePanel p.details span
+{
+	display: inline-block;
+	height: 33px!important;
+	width: 75px!important;
+	margin: 35px 0 0 0;
+
+}
+
+.good { color: green;}
+.bad {color: red;}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/*  Le mini slideshow par catégorie                                                        *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.minislideshow 
+{
+	display: block;
+	position: relative;
+	width: 200px;
+	height: 100px;
+	float: left;
+	margin-left: 75px; 
+}
+.minislideshow img
+{
+	display: block;
+	margin: 3px auto;
+	height: 90px;
+	line-height: 90px;
+	background: #fff;
+	border: 1px solid #000;
+	padding: 1px;
+	max-width: 200px;
+}
+.vote0 , .vote1, .vote2, .vote3
+{
+	display: block;
+	float: left;
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	bottom: -5px;
+	left: 86px;
+	background: transparent url('../../../../assets/theme/agpa/img/icon-star.png') 0 -56px; 
+	z-index: 10;
+}
+.vote1
+{
+	width: 56px;
+	left: 72px;
+}
+.vote2
+{
+	width: 84px;
+	left: 58px;
+}
+.vote3
+{
+	width: 84px;
+	left: 58px;
+}
+
+
+.photo
+{
+	position: relative;
+}
+.photo .vote0 , .photo .vote1, .photo .vote2, .photo .vote3
+{
+	bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.oeuvre .pannel 
+{
+	-webkit-filter: grayscale(0)!important;
+}
+
+
+
+a.category:hover
+{
+	box-shadow: 0 0 10px #aaa;
+	background: rgba(255,255,255,0.1);
+}
+
+a.reportPhoto 
+{
+	background: transparent url('../../../../assets/theme/agpa/img/icon-question.png') 0 2px no-repeat;
+	color: #335;
+	cursor: pointer;
+	font-size: 12px;
+	float: left;
+}
+
+
+
+
+
+
+
+.voteStar
+{
+	float: left;
+	position: relative;
+	width: 28px;
+	height: 28px;
+	padding-left: 0!important;
+	background: transparent url('../../../../assets/theme/agpa/img/icon-star.png'); 
+	background-repeat: no-repeat;
+}
+.voteFeather
+{
+	display: block;
+	float: right;
+	position: relative;
+	width: 28px;
+	height: 28px;
+	padding-left: 0!important;
+	background: transparent url('../../../../assets/theme/agpa/img/icon-plume.png'); 
+	background-repeat: no-repeat;
+}
+a.voteFeather:hover, a.voteStar:hover
+{
+	background-position: 0 -28px;
+	cursor: pointer;
+}
+.voteFeather.selected, .voteStar.selected
+{
+	background-position: 0 -56px;
+}
+a.voteFeather.selected:hover, a.voteStar.selected:hover
+{
+	background-position: 0 -84px;
+}
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/*  Dépouillement                                                                          *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.computeDetails, table
+{
+	font-size: 10px;
+	color:#aaa;
+}

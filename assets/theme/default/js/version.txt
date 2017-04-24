@@ -1,0 +1,17 @@
+ *
+ * js 2.x ne supporte pas IE 6/7/8.
+ *
+
+ * jquery-2.1.1.min.js
+   http://jquery.com/download/
+ 
+ * jqueryUI 1.10.3 + vader style
+
+ * Lightbox 2 (pour jquery 2.x)
+   http://lokeshdhakar.com/projects/lightbox2/
+ 
+ * JqPlot ( 1.0.8r1250 )
+   http://www.jqplot.com/
+
+ * tinyMCE 4.1.0 jQuery package
+   http://www.tinymce.com/download/download.php

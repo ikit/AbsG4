@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "AbsgFont";
+    src: url('../../../../assets/theme/default/font/Bariol_Regular.otf');
+}
+
+::selection{ background-color: #E13300; color: white; }
+::moz-selection{ background-color: #E13300; color: white; }
+::webkit-selection{ background-color: #E13300; color: white; }
+
+body 
+{
+	margin: 0;
+	font-family: sans-serif;
+	color: #fff;
+
+	background-color: #16222e;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Le container principal (contient header, content et footer)                             *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+#container
+{
+	position: absolute;
+	margin: 0;
+	border: none;
+	min-height: 100%;
+	width: 100%;
+}
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Le décor                                                                                *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.illustration
+{
+	width: 768px;
+	height: 768px;
+	position: relative;
+	margin: auto;
+	background-repeat: no-repeat;
+}
+
+.r00
+{
+	background-image: url("../../../../assets/theme/login/img/bg-00.jpg");
+}
+.bgoverlay
+{
+	position: absolute;
+	margin: 0;
+	border: none;
+	min-height: 100%;
+	width: 100%;
+	background-image: url("../../../../assets/theme/login/img/bg.png");
+	z-index: 10;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* Le contenu                                                                              *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#content
+{
+	position: relative;
+	z-index: 20;
+	padding: 100px 0;
+	text-align: center;
+}
+h1
+{
+	text-align: center;
+	color: rgba(0,0,0,0.5);
+	text-shadow: 0 -1px #000;
+	text-shadow: 0 1px #aaa;
+	font-size: 40px;
+	font-family: "AbsgFont", sans-serif;
+	margin: 0 0 60px 0;
+}
+
+
+
+
+form
+{
+	margin: auto;
+	padding: 10px;
+	width: 240px;
+	height: 62px;
+
+	background: rgba(255,255,255,0.1);
+	border-radius: 5px;
+	box-shadow: 0 0 5px #999;
+	font-family: "AbsgFont";
+	font-weight: bold;
+}
+label
+{
+	display: none;
+}
+
+input
+{
+	margin: 0;
+	height: 25px;
+	width: 100%;
+	background:none;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+	
+	text-align: center;
+	color: rgba(0, 0, 0, 0.7);
+	text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+	font-size: 20px;
+
+}
+input[type="text"]:focus
+{
+	outline: none;
+}
+input[type="password"]
+{
+	margin: 5px 0;
+	text-shadow: none;
+}
+input[type="password"]:focus
+{
+	outline: none;
+}
+
+input[type="submit"]
+{
+	margin-top: 10px;
+	height: 20px;
+	width: 100%;
+	background:none;
+	border:none;
+	box-shadow: none;
+	text-shadow: none;
+	color: #aaa;
+	font-size: 10px;
+}

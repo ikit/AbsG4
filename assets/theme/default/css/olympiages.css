@@ -1,0 +1,99 @@
+
+
+#container.mm-olympiages { background-color: #ddd; }
+
+
+h1.olympiages
+{
+	font-family : "AbsgFont", sans-serif;
+	color:  #aaa;
+	text-shadow: 0 1px rgba(255, 255, 255, 1);
+
+	padding: 0;
+	text-align: center;
+	margin: 30px 0;
+
+	line-height: 60px;
+}
+
+h2
+{
+	width: 500px;
+	margin: auto;
+	font-family : "AbsgFont", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:  #aaa;
+	text-shadow: 0 1px #fff;
+	margin-bottom: 0;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#content p
+{
+
+	width: 500px;
+	text-align: justify;
+	font-style: italic;
+	color: #555;
+	text-shadow: 0 1px #eee;
+	font-size: 12px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+#content ul, #content ol
+{
+
+	width: 500px;
+	text-align: justify;
+	font-style: italic;
+	color: #555;
+	text-shadow: 0 1px #eee;
+	font-size: 12px;
+	margin: auto;
+	margin-bottom: 10px;
+	padding-left: 50px;
+}
+
+#content img
+{
+/*	display: block;
+ margin: auto;*/
+}
+
+
+
+
+/****************************************************************************************
+ * Game
+ ****************************************************************************************/
+#joGame h2
+{
+  width: 800px;
+  height: 50px;
+	line-height: 50px;
+ 
+	margin: 10px 0 0 0;
+	font-family : "AbsgFont", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:  #aaa;
+	text-shadow: 0 1px #fff;
+
+  background-image: url("../../../../assets/img/olympiages/logo_50.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-left: 120px;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+
+
+
+
