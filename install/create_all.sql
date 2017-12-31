@@ -173,7 +173,7 @@ CREATE TABLE `absg_users` (
 --
 
 INSERT INTO `absg_users` (`user_id`, `people_id`, `username`, `username_clean`, `password`, `auth`, `noteg`, `rank`, `last_activity`) VALUES
-(1, 1, 'Zaffa', 'zaffa', '0b9c2625dc21ef05f6ad4ddf47c5f203837aa32c', '*', '\'D\';0;0;1;0', 'D', ''),
+(1, 1, 'Zaffa', 'zaffa', '0b9c2625dc21ef05f6ad4ddf47c5f203837aa32c', '*', '\'D\';0;0;1;0', 'D', '');
 
 
 -- --------------------------------------------------------
